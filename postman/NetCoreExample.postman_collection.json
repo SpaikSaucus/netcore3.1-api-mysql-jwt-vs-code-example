@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "bb301dc3-f632-4e2b-904a-95b4ed8361ca",
+		"name": "NetCoreExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10582959"
+	},
+	"item": [
+		{
+			"name": "OAuth Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmFtZWlkIjoiNjgwNjM5ZTktZGY1Yi0xMWViLTg3YjctMWMxYjBkOTdlYjNhIiwiZW1haWwiOiJhZG1pbkBwcnVlYmEuY29tIiwibmJmIjoxNjU3Njc2NTExLCJleHAiOjE2NTc3MTk3MTEsImlhdCI6MTY1NzY3NjUxMX0.SfqL7N-5l6YQvHBmipbRX6-uyp-BQwrkwrc9YV7OEhs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"prueba\",\r\n  \"password\": \"prueba\",\r\n  \"email\": \"prueba@prueba.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/user",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmFtZWlkIjoiNjgwNjM5ZTktZGY1Yi0xMWViLTg3YjctMWMxYjBkOTdlYjNhIiwiZW1haWwiOiJhZG1pbkBwcnVlYmEuY29tIiwibmJmIjoxNjU3Njc2NTExLCJleHAiOjE2NTc3MTk3MTEsImlhdCI6MTY1NzY3NjUxMX0.SfqL7N-5l6YQvHBmipbRX6-uyp-BQwrkwrc9YV7OEhs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/user?guid=2eae1ba5-c3ce-4fa2-add3-e470e5a9aa7c",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"user"
+					],
+					"query": [
+						{
+							"key": "guid",
+							"value": "2eae1ba5-c3ce-4fa2-add3-e470e5a9aa7c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmFtZWlkIjoiNjgwNjM5ZTktZGY1Yi0xMWViLTg3YjctMWMxYjBkOTdlYjNhIiwiZW1haWwiOiJhZG1pbkBwcnVlYmEuY29tIiwibmJmIjoxNjU3Njc2NTExLCJleHAiOjE2NTc3MTk3MTEsImlhdCI6MTY1NzY3NjUxMX0.SfqL7N-5l6YQvHBmipbRX6-uyp-BQwrkwrc9YV7OEhs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:5001/api/dashboard",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
