@@ -10,20 +10,20 @@ Netcore api example with MySQL, JWT and swagger
 - [MySQL](#mysql-with-net-core)
 - [Swagger](#swagger)
 - [Tips](#tips)
-- [Environment configuration](#environment-configuration)
-- [Generate model from database](#generate-model-from-database)
-- [Other Provider DB](#other-provider-db)
-- [Disable telemetry](#disable-telemetry)
+  - [Environment configuration](#environment-configuration)
+  - [Generate model from database](#generate-model-from-database)
+  - [Other Provider DB](#other-provider-db)
+  - [Disable telemetry](#disable-telemetry)
 - [Postman Collection](#postman-collection)
 - [Troubleshooting](#troubleshooting)
-- [IntelliSense not working](#intelliSense-not-working)
+  - [IntelliSense not working](#intelliSense-not-working)
 - [License](#license)
 
 ## Getting Started
 
 * Download repository
-* Use VS Code IDE → [download](https://code.visualstudio.com/download)
-* Install SDK 3.1 → [download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.302-windows-x64-installer)
+* Use VS Code IDE :point_right: [download](https://code.visualstudio.com/download)
+* Install SDK 3.1 :point_right: [download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.302-windows-x64-installer)
 * Install extension C# of microsoft (powered by OmniSharp).
   https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 
