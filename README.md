@@ -107,7 +107,7 @@ To generate a new webApi, follow these steps:
 	dotnet build
 	```
 
-##JWT
+## JWT
 
 Documentation Inprogress...
 
