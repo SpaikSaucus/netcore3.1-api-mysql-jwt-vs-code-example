@@ -1,5 +1,5 @@
-# netcore-api-mysql-jwt-example
-Netcore api example with MySQL, JWT and swagger
+# netcore3.1-api-mysql-jwt-vs-code-example
+Netcore 3.1 api example with MySQL, JWT and swagger (using VS Code)
 
 ## Table of Contents
 - [Getting started](#getting-started)
@@ -22,7 +22,7 @@ Netcore api example with MySQL, JWT and swagger
 ## Getting Started
 
 * Download repository
-* Use VS Code IDE :point_right: [download](https://code.visualstudio.com/download)
+* Install VS Code IDE :point_right: [download](https://code.visualstudio.com/download)
 * Install SDK 3.1 :point_right: [download](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.302-windows-x64-installer)
 * Install extension C# of microsoft (powered by OmniSharp).
   https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
