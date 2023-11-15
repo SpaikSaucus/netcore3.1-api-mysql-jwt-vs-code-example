@@ -107,9 +107,27 @@ To generate a new webApi, follow these steps:
 	dotnet build
 	```
 
+
 ## JWT
 
-Documentation Inprogress...
+1. Create Token:
+```bash
+curl --location 'https://localhost:5001/auth/login' \
+--header 'Content-Type: application/json' \
+--data '{
+  "username": "admin",
+  "password": "admin"
+}'
+```
+2. Use Token: (_replace XXXX with the token generated_)
+```bash
+curl --location --request GET 'http://localhost:5000/api/user?guid=2eae1ba5-c3ce-4fa2-add3-e470e5a9aa7c' \
+--header 'Authorization: Bearer XXXX' \
+--header 'Content-Type: application/json' \
+```
+
+* Can you check the token information in [JWT.io](https://jwt.io/)
+
 
 ## MYSQL with NET Core
 https://dev.mysql.com/downloads/installer/
